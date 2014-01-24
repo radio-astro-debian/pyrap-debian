@@ -1,0 +1,76 @@
+Description: set casacore path to deb package path
+ .
+ pyrap (1.1.0-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Author: Gijs Molenaar <gijs@pythonic.nl>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- pyrap-1.1.0.orig/pyrap_images/tags/pyrap_images-0.1.1/setup.cfg
++++ pyrap-1.1.0/pyrap_images/tags/pyrap_images-0.1.1/setup.cfg
+@@ -1,6 +1,6 @@
+ [build_ext]
+ # These are the defaults, edit if different
+-#casacore=/usr/local
++casacore=/usr
+ #pyrap=/usr/local
+ #f2c=/usr
+ #f2clib=gfortran
+--- pyrap-1.1.0.orig/pyrap_functionals/tags/pyrap_functionals-0.2.1/setup.cfg
++++ pyrap-1.1.0/pyrap_functionals/tags/pyrap_functionals-0.2.1/setup.cfg
+@@ -1,5 +1,5 @@
+ [build_ext]
+-#casacore=/usr/local
++casacore=/usr
+ #pyrap=/usr/local
+ #boost=/usr/local
+ #boostlib=boost_python
+--- pyrap-1.1.0.orig/pyrap_fitting/tags/pyrap_fitting-0.2.1/setup.cfg
++++ pyrap-1.1.0/pyrap_fitting/tags/pyrap_fitting-0.2.1/setup.cfg
+@@ -1,5 +1,5 @@
+ [build_ext]
+-#casacore=/usr/local
++casacore=/usr
+ #pyrap=/usr/local
+ #boost=/usr/local
+ #boostlib=boost_python
+--- pyrap-1.1.0.orig/pyrap_tables/tags/pyrap_tables-0.3.0/setup.cfg
++++ pyrap-1.1.0/pyrap_tables/tags/pyrap_tables-0.3.0/setup.cfg
+@@ -1,5 +1,5 @@
+ [build_ext]
+-#casacore=/usr/local
++casacore=/usr
+ #pyrap=/usr/local
+ #boost=/usr
+ 
+--- pyrap-1.1.0.orig/pyrap_quanta/tags/pyrap_quanta-0.3.1/setup.cfg
++++ pyrap-1.1.0/pyrap_quanta/tags/pyrap_quanta-0.3.1/setup.cfg
+@@ -1,6 +1,6 @@
+ [build_ext]
+ #extra-root = None
+-#casacore = /usr/local
++casacore = /usr
+ #pyrap=/usr/local
+ #boost=/usr
+ 
+--- pyrap-1.1.0.orig/pyrap_measures/tags/pyrap_measures-0.2.1/setup.cfg
++++ pyrap-1.1.0/pyrap_measures/tags/pyrap_measures-0.2.1/setup.cfg
+@@ -1,5 +1,5 @@
+ [build_ext]
+-#casacore=/usr/local
++casacore=/usr
+ #pyrap=/usr/local
+ #boost=/usr/local
+ #boostlib=boost_python

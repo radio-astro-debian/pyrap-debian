@@ -1,0 +1,18 @@
+Source: pyrap
+Section: libs
+Priority: extra
+Maintainer: Gijs Molenaar <gijs@pythonic.nl>
+Build-Depends: debhelper (>= 8.0.0), libcasacore-dev, python2.7-minimal,
+ libboost-python-dev, python-numpy, python-setuptools, wcslib-dev, libblas-dev,
+ liblapack-dev, gfortran, libcfitsio3-dev
+Standards-Version: 3.9.2
+Homepage: http://code.google.com/p/pyrap/
+Vcs-Git: git://github.com/gijzelaerr/pyrap-debian.git
+Vcs-Browser: https://github.com/gijzelaerr/pyrap-debian
+
+Package: pyrap
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: to interface between casacore and python data types, e.g. casa::Record to dict.
+ It also provides python module wrappers to various casacore packages, e.g. quanta
+ and tables under the meta module pyrap.

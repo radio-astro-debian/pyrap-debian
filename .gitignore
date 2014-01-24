@@ -1,0 +1,7 @@
+files
+pyrap.debhelper.log
+pyrap.postinst.debhelper
+pyrap.prerm.debhelper
+pyrap.substvars
+pyrap/
+tmp/

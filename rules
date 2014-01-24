@@ -1,0 +1,37 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+%:
+	dh $@ --with python2
+
+override_dh_auto_install:
+	dh_auto_install
+	cd libpyrap/current/pyrap/Converters &&  g++ -c -fPIC -W -Wall \
+		-Woverloaded-virtual -O2 -DAIPS_USENUMPY -I. -I../.. \
+		-I/usr/include/casacore \
+		-I/usr/lib/python2.7/dist-packages/numpy/core/include \
+		-I/usr/include/python2.7 *.cc
+	cd libpyrap/current/pyrap/Converters && g++ -shared -o libpyrap.so *.o
+
+	for pack in fitting functionals images measures quanta tables util ; do \
+		cd pyrap_$$pack/current && \
+			python setup.py build_ext --casacore=/usr \
+				-I../../../libpyrap/current/ \
+				-L../../../libpyrap/current/pyrap/Converters/ && \
+			python setup.py install --root=$(CURDIR)/debian/tmp  --install-layout=deb ; \
+		cd ../.. ; \
+	done
+
+override_dh_clean:
+	dh_clean
+	for pack in fitting functionals images measures quanta tables util ; do \
+		find pyrap_$$pack/current/ -name "*.pyc" -delete; \
+		rm -rf pyrap_$$pack/current/build; \
+		rm -rf pyrap_$$pack/current/*.egg-info;\
+	done
+	rm libpyrap/current/pyrap/Converters/*.o || true
+	rm libpyrap/current/pyrap/Converters/*.so || true
+	rm -rf pyrap_util/current/pyrap.util.egg-info
