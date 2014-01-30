@@ -1,3 +1,9 @@
+pyrap (1.1.0+svn350-1precise2) precise; urgency=low
+
+  * rename package to python-pyrap
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Thu, 30 Jan 2014 12:26:22 +0200
+
 pyrap (1.1.0+svn350-1precise1) precise; urgency=low
 
   * fix package name

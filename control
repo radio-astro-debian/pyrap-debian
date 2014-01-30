@@ -10,7 +10,7 @@ Homepage: http://code.google.com/p/pyrap/
 Vcs-Git: git://github.com/gijzelaerr/pyrap-debian.git
 Vcs-Browser: https://github.com/gijzelaerr/pyrap-debian
 
-Package: pyrap
+Package: python-pyrap
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: to interface between casacore and python data types, e.g. casa::Record to dict.
