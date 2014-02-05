@@ -1,2 +1,4 @@
 libpyrap/current/pyrap/Converters/libpyrap.so usr/lib
 usr/lib/python2.7/dist-packages
+libpyrap/current/pyrap/Converters.h usr/include/pyrap
+libpyrap/current/pyrap/Converters/*.h usr/include/pyrap/Converters
