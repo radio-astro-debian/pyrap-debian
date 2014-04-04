@@ -1,3 +1,10 @@
+pyrap (1.1.0+svn351-1trusty) trusty; urgency=low
+
+  * new upstream release
+  * build for trusty
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Fri, 04 Apr 2014 13:36:24 +0200
+
 pyrap (1.1.0+svn350-2precise1) precise; urgency=low
 
   * include headers
