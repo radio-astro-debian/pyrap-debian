@@ -2,7 +2,7 @@ Source: pyrap
 Section: libs
 Priority: extra
 Maintainer: Gijs Molenaar <gijs@pythonic.nl>
-Build-Depends: debhelper (>= 8.0.0), libcasacore-dev, python2.7-minimal,
+Build-Depends: debhelper (>= 8.0.0), libcasacore-dev, python-dev,
  libboost-python-dev, python-numpy, python-setuptools, wcslib-dev, libblas-dev,
  liblapack-dev, gfortran, libcfitsio3-dev
 Standards-Version: 3.9.2
