@@ -1,3 +1,21 @@
+casa-pyrap (1.1.0+svn358-3trusty) trusty; urgency=medium
+
+  * typo in package name
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Wed, 14 Jan 2015 15:36:52 +0100
+
+casa-pyrap (1.1.0+svn358-2trusty) trusty; urgency=medium
+
+  * archive was wrong somehow
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Tue, 13 Jan 2015 16:40:36 +0100
+
+casa-pyrap (1.1.0+svn358-1trusty) trusty; urgency=medium
+
+  * compiled againsts casa casacore
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Tue, 13 Jan 2015 14:27:06 +0100
+
 pyrap (1.1.0+svn358-1trusty) trusty; urgency=low
 
   * new upstream commits to trunk
