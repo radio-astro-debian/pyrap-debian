@@ -2,9 +2,16 @@ debian package files for pyrap:
 
 https://code.google.com/p/pyrap
 
+note that pyrap has been replace by python-casacore
+
 These files are used to create debian packages for the SKA Ubuntu PPA:
 
 https://launchpad.net/~ska-sa
+
+
+packaging related issues should be reported here
+
+https://github.com/radio-astro/packaging
 
 
 
